@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ihsan Ali | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar container">
+      <div class="logo">IHSAN <span>ALI</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#services" class="nav-item">Services</a></li>
+        <li><a href="#testimonials" class="nav-item">Reviews</a></li>
+        <li><a href="#blog" class="nav-item">Blog</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container" id="home">
+    <div class="hero-text fade-in">
+      <h1>Hi, I'm <span>IHSAN ALI </span></h1>
+      <h2>Frontend Developer & Designer</h2>
+      <p>
+        I build modern, responsive, fast websites using HTML, CSS, JavaScript,
+        and modern frameworks.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn-outline">Hire Me</a>
+      </div>
+    </div>
+
+    <div class="hero-img fade-in">
+      <img src="pro2.jpg.jpeg" alt="Profile" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section container fade-in" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-desc">
+      I'm a passionate developer who loves building clean UI and powerful websites.
+    </p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Who Am I?</h3>
+        <p>
+          I am a developer from Pakistan. I focus on modern UI, responsive layouts,
+          and strong coding practices.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>Experience</h3>
+        <p>
+          I have experience in HTML, CSS, JS, Tailwind, Bootstrap, GitHub,
+          PHP, and MySQL.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>Goal</h3>
+        <p>
+          My goal is to become a full-stack developer and build scalable web apps.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section container fade-in" id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <p class="section-desc">Here are my technical skills with proficiency level.</p>
+
+    <div class="skills">
+      <div class="skill">
+        <div class="skill-top">
+          <span>HTML</span><span>95%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 95%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>CSS</span><span>90%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>JavaScript</span><span>80%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 80%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>PHP</span><span>70%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>MySQL</span><span>75%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 75%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section container fade-in" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-desc">Some of my recent work.</p>
+
+    <div class="project-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" data-category="web">
+        <h3>E-Commerce Website</h3>
+        <p>Responsive online store website.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+
+      <div class="project-card" data-category="design">
+        <h3>Landing Page UI</h3>
+        <p>Modern landing page design.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+
+      <div class="project-card" data-category="backend">
+        <h3>Login System</h3>
+        <p>PHP + MySQL secure login system.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <h3>Portfolio Website</h3>
+        <p>Clean portfolio design.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section container fade-in" id="services">
+    <h2 class="section-title">Services</h2>
+    <p class="section-desc">What I can do for you.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>I create responsive websites with clean code.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-paintbrush"></i>
+        <h3>UI Design</h3>
+        <p>Modern UI/UX design for websites and apps.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-database"></i>
+        <h3>Backend</h3>
+        <p>PHP + MySQL backend systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section container fade-in" id="testimonials">
+    <h2 class="section-title">Testimonials</h2>
+    <p class="section-desc">What clients say about me.</p>
+
+    <div class="testimonial-box">
+      <p id="testimonialText">
+        "Amazing developer! Very professional and fast."
+      </p>
+      <h4 id="testimonialName">- Client 1</h4>
+
+      <div class="testimonial-controls">
+        <button id="prevTest"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="nextTest"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section container fade-in" id="blog">
+    <h2 class="section-title">Blog</h2>
+    <p class="section-desc">Latest articles & tips.</p>
+
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>How to Learn JavaScript</h3>
+        <p>Beginner friendly roadmap to learn JS.</p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>HTML + CSS Best Practices</h3>
+        <p>Write clean code and responsive UI.</p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>How to Host Website on GitHub</h3>
+        <p>Step by step guide for GitHub Pages.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section container fade-in" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-desc">Send me a message and let's work together.</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <p>© 2026 Your Name. All Rights Reserved.</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
